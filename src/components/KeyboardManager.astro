@@ -35,12 +35,11 @@ const ProfilesInfo = profiles.map(({ network, url }) => {
 		const data = parse.map((item: any) => {
 			return {
 				...item,
-				handler() {
-					window.open(url, "_blank")
-				}
+				handler: () => {
+          		window.open(url, "_blank")
+        		}
 			}
 		})
-		console.log(data)
 		ninja.data = [
     		{
       		id: 'print',
