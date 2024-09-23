@@ -69,14 +69,24 @@
 	],
 	"skills": [
 	 {
-		"name": "PHP",
-		"level": "Intermedio",
-		"keywords": ["Backend", "Desarrollo Web", "PHP Nativo", "Smarty"]
+		"name": "HTML",
+		"level": "Avanzado",
+		"keywords": ["Frontend", "Desarrollo Web"]
+	 },
+	 {
+		"name": "CSS",
+		"level": "Avanzado",
+		"keywords": ["Frontend", "Desarrollo Web"]
 	 },
 	 {
 		"name": "JavaScript",
 		"level": "Intermedio",
 		"keywords": ["Frontend", "NodeJS"]
+	 },
+	 {
+		"name": "PHP",
+		"level": "Intermedio",
+		"keywords": ["Backend", "Desarrollo Web", "PHP Nativo", "Smarty"]
 	 },
 	 {
 		"name": "MySQL",

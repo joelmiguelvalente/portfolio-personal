@@ -46,10 +46,13 @@ const { title } = Astro.props;
 		text-wrap: pretty;
 	}
 	.badge {
-		display: inline-block;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: .325rem;
 		border-radius: 4px;
-		color: #222;
 		background: #F4F4F4;
+		color: #333;
 		font-weight: 600;
 		height: 1.325rem;
 		line-height: 1.325rem;

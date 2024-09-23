@@ -1,15 +1,39 @@
 ---
 import Section from "@components/Section"
 import { skills } from "@cv"
+
+import CSS from "@icons/Css"
+import HTML from "@icons/Html"
+import icoAstro from "@icons/AstroI"
+import JavaScript from "@icons/JS"
+import MySQL from "@icons/SQL"
+import PHP from "@icons/PHP"
+import Smarty from "@icons/Smarty"
+
+const SKILLS_ICONS: Record<string, any> = {
+  CSS,
+  HTML,
+  icoAstro,
+  JavaScript,
+  MySQL,
+  PHP,
+  Smarty,
+}
 ---
 <Section title="Habilidades">
 	<ul>
 		{
-			skills.map(( { name } ) => (
-				<li>
-					<span class="badge">{name}</span>
-				</li>
-			))
+			skills.map(( { name } ) => {
+        		const iconName = name === "Astro" ? "icoAstro" : name
+        		const Icon = SKILLS_ICONS[iconName];
+
+				return (
+					<li class="skill-item">
+						{Icon && <span class="skill-icon no-print" title={name}><Icon /></span> }
+						<span class="skill-text print">{name}</span>
+					</li>
+				)
+			})
 		}
 	</ul>
 </Section>
@@ -20,11 +44,22 @@ import { skills } from "@cv"
 		flex-wrap: wrap;
 		gap: 0.5rem;
 	}
-	.badge {
-		display: inline-block;
-		font-style: normal;
-		font-size: .875rem;
+	.skill-icon {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 0.5rem;
+	}
+	.skill-text {
+		font-weight: 500;
+		font-size: 0.875rem;
 		line-height: 1.5rem;
 		height: 1.5rem;
+		padding: 0 .5rem;
+		border-radius: .325rem;
+		background: #F4F4F4;
+		color: #222;
+		border: 1px solid #EEE;
+		display: inline-block;
 	}
 </style>
