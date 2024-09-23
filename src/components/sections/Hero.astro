@@ -1,0 +1,122 @@
+---
+import Section from "@components/Section"
+import Mail from "@icons/Mail"
+import MapPin from "@icons/MapPin"
+import PhoneCall from "@icons/PhoneCall"
+import X from "@icons/X"
+import GitHub from "@icons/GitHub"
+import LinkedIn from "@icons/LinkedIn"
+import { basics } from "@cv"
+// 
+const { name, label, image, location, profiles, phone, email } = basics
+const { city, region } = location
+
+const SOCIAL_ICONS: Record<string, any> = {
+	GitHub, LinkedIn, X
+}
+
+const linkedInfo = profiles.find(({network}) => network === 'LinkedIn')
+const linkedUrl = linkedInfo?.url
+
+const print = [email, phone, linkedUrl].filter(Boolean).join(" • ")
+---
+ 
+<Section>
+	<div class="container">
+		<div class="info">
+			<h1>{name}</h1>
+			<h2>{label}</h2>
+			<span><MapPin /> {city}, {region}</span>
+			<footer class="print">
+				{print}
+			</footer>
+			<footer class="no-print">
+				{email && (
+						<a href={`mailto:${email}`} title={`Enviar un correo a ${name} al correo ${email}`} target="_blank" rel="noopener noreferrer"><Mail /></a>
+					)
+				}
+				{phone && (
+						<a href={`tel:${phone}`} title={`Llamar por teléfono a ${name}`} target="_blank" rel="noopener noreferrer"><PhoneCall /></a>
+					)
+				}
+				{
+					profiles.map(({ network, url, username }) => {
+						const Icon = SOCIAL_ICONS[network]
+						return (
+							<a href={url} title={`Perfil en ${network}`} target="_blank" rel="noopener noreferrer"><Icon /></a>
+						)
+					})
+				}
+			</footer>
+		</div>
+		<figure>
+			<img src={image} alt={name} />
+		</figure>
+	</div>
+</Section>
+
+<style>
+	.container {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		gap: 1rem;
+	}
+	.info {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		padding-right: 2rem;
+	}
+	h1 {
+		font-size: 2rem;
+	}
+	h2 {
+		color: #A57903;
+		font-weight: 600;
+		font-size: 1rem;
+		text-wrap: balance;
+	}
+	@media print {
+		h2 {
+			color: #444;
+			font-weight: 500;
+		}
+	}
+	img {
+		aspect-ratio: 1 / 1;
+		object-fit: cover;
+		border-radius: 1rem;
+		width: 8rem;
+	}
+	span {
+		color: #666;
+		display: flex;
+		align-items: center;
+		gap: 0.25rem;
+		font-size: 0.85rem;
+		letter-spacing: -.05rem;
+	}
+	footer {
+		color: #555;
+		font-size: 0.65rem;
+		display: flex;
+		gap: 0.5rem;
+		margin-top: 0.5rem;
+	}
+	footer a {
+		--wh: 2.5rem;
+		color: #656565;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: calc(var(--wh) + .125rem);
+		height: calc(var(--wh) - .125rem);
+		border-radius: 6px;
+		transition: all .3s ease;
+	}
+	footer a:hover {
+		background: #eee;
+	}
+</style>

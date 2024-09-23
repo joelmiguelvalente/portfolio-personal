@@ -1,0 +1,30 @@
+---
+import Section from "@components/Section"
+import { skills } from "@cv"
+---
+<Section title="Habilidades">
+	<ul>
+		{
+			skills.map(( { name } ) => (
+				<li>
+					<span class="badge">{name}</span>
+				</li>
+			))
+		}
+	</ul>
+</Section>
+
+<style>
+	ul {
+		display: inline-flex;
+		flex-wrap: wrap;
+		gap: 0.5rem;
+	}
+	.badge {
+		display: inline-block;
+		font-style: normal;
+		font-size: .875rem;
+		line-height: 1.5rem;
+		height: 1.5rem;
+	}
+</style>

@@ -1,0 +1,163 @@
+{
+	"basics": {
+		"name": "Joel Miguel Valente",
+		"label": "Desarrollador",
+		"image": "/me.webp",
+		"email": "joelmiguelvalente@gmail.com",
+		"phone": "+54 9 1153891106",
+		"url": "https://midu.dev",
+		"summary": "+10 años como Desarrollador Web Fullstack en proyectos complejos. Comencé en el mundo de PHP en 2011, investigando y aprendiendo de manera autodidacta. He desarrollado, no completamente, pero sí modificando varios sitios web. Además, he diseñado páginas desde cero utilizando HTML, CSS y JavaScript.",
+		"location": {
+			"address": "",
+			"postalCode": "1615",
+			"city": "Buenos Aires",
+			"countryCode": "AR",
+			"region": "Argentina"
+		},
+		"profiles": [
+			{
+				"network": "LinkedIn",
+				"username": "joelmiguelvalente",
+				"url": "https://linkedin.com/in/joelmiguelvalente"
+			},
+			{
+				"network": "GitHub",
+				"username": "joelmiguelvalente",
+				"url": "https://github.com/joelmiguelvalente"
+			}
+		]
+	},
+	"work": [
+	 	{
+			"name": "Desarrollador Freelance",
+			"position": "Fullstack",
+			"url": "https://zcodev.alwaysdata.net",
+			"startDate": "2024-07-12",
+			"endDate": null,
+			"summary": "Trabajo de forma independiente en proyectos de desarrollo web a medida. Uso tecnologías como PHP con Smarty, JavaScript, NodeJS y bases de datos MySQL.",
+			"highlights": [
+		 		"Desarrollo de sistemas backend escalables y eficientes."
+			]
+		}
+  	],
+	"education": [
+		{
+			"institution": "Centro de Formación Profesional 401",
+			"url": "https://cfp401.edu.ar/",
+			"area": "Energías Renovables & Tornería",
+			"studyType": null,
+			"startDate": "2023-03-01",
+			"endDate": "2023-12-20",
+			"score": null,
+			"courses": [
+				"Electricidad y Energías Renovables",
+				"Tornería y Dibujo digital en SolidWorks"
+			]
+		},
+		{
+			"institution": "Centro de Formación Profesional (Gral. Sarmiento)",
+			"url": "https://www.formacionsarmiento.com/",
+			"area": "Master en Operador en PC & Inglés I",
+			"studyType": null,
+			"startDate": "2014-10-24",
+			"endDate": "2015-10-24",
+			"score": null,
+			"courses": [
+				""
+			]
+		}
+	],
+	"skills": [
+	 {
+		"name": "PHP",
+		"level": "Intermedio",
+		"keywords": ["Backend", "Desarrollo Web", "PHP Nativo", "Smarty"]
+	 },
+	 {
+		"name": "JavaScript",
+		"level": "Intermedio",
+		"keywords": ["Frontend", "NodeJS"]
+	 },
+	 {
+		"name": "MySQL",
+		"level": "Básico",
+		"keywords": ["Bases de Datos", "SQL", "Backend"]
+	 },
+	 {
+		"name": "Astro",
+		"level": "Empenzando",
+		"keywords": ["Framework", "Frontend", "NodeJS"]
+	 },
+	 {
+		"name": "Smarty",
+		"level": "Intermedio",
+		"keywords": ["PHP Template Engine", "Backend"]
+	 }
+	],
+	"languages": [
+		{
+			"language": "Spanish",
+			"fluency": "Native speaker"
+		}
+	],
+	"projects": [
+		{
+			"name": "PHPost '23",
+			"isActive": false,
+			"description": "PHPost estaba siendo realizado con PHP y Smarty (lo pase a ZCode)",
+			"highlights": [
+				"Instalable",
+				"Configurable",
+				"Abandonada"
+			],
+			"url": "https://github.com/ScriptParaPHPost/PHPost"
+		},
+		{
+			"name": "ZCode 1.10.15",
+			"isActive": false,
+			"description": "ZCode 1.10.15 esta realizado con PHP y Smarty, usa como base el clon de PHPost",
+			"highlights": [
+				"Instalable",
+				"Optimización",
+				"Configurable",
+				"Estable"
+			],
+			"url": "https://github.com/ScriptParaPHPost/ZCode"
+		},
+		{
+			"name": "ZCode 2.0.4",
+			"isActive": true,
+			"description": "ZCode 2.0.4 esta realizado con PHP y Smarty, usa como base el clon de PHPost",
+			"highlights": [
+				"Instalable",
+				"Optimización",
+				"Configurable",
+				"En desarrollo"
+			],
+			"url": "https://zcodev.alwaysdata.net"
+		},
+		{
+			"name": "ZCode Feed",
+			"isActive": true,
+			"description": "Solo es un pequeño sistema hecho con php para mostrar información a los sitios instalados sobre nuevas actualizaciones y visitarlo de forma visual",
+			"highlights": [
+				"Descargas",
+				"Información",
+				"Peticiones",
+				"Versiones"
+			],
+			"url": "https://zcodev.alwaysdata.net/feed"
+		},
+		{
+			"name": "Fiesta Dulce",
+			"isActive": true,
+			"description": "Página con el funcionamiento necesario ya que solo brinda información como si fuese un catágolo y esta funcionando en vercel",
+			"highlights": [
+				"Astro",
+				"Cloudinary",
+				"Vercel"
+			],
+			"url": "https://fiestadulce.vercel.app"
+		}
+  ]
+}

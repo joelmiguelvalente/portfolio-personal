@@ -1,0 +1,58 @@
+---
+import Layout from '@/layouts/Layout.astro';
+
+// Configurado en tsconfig.json => "src/components/sections/*.astro"
+import Hero from '@sections/Hero';
+import About from '@sections/About';
+import Skills from '@sections/Skills';
+import Experience from '@sections/Experience';
+import Education from '@sections/Education';
+import Projects from '@sections/Projects';
+
+// Configurado en tsconfig.json => "src/components/*.astro"
+import KeyboardManager from '@components/KeyboardManager';
+
+const sections = {
+	Hero,
+	About,
+	Skills,
+	Experience,
+	Education,
+	Projects
+};
+
+import { basics } from "@cv"
+const { name, label } = basics
+---
+
+<Layout title={`Portafolio de ${name} - ${label}`}>
+	<main>
+   	{Object.keys(sections).map(section => {
+    		const SectionComponent = sections[section];
+    		return <SectionComponent />;
+  		})}
+	</main>
+	<KeyboardManager />
+</Layout>
+
+<style>
+  	main {
+  		background: #FFF;
+   	padding: 2rem;
+   	margin: auto;
+   	border-radius: .5rem;
+   	box-shadow: 0 0 1rem #0004;
+		max-width: 60%;
+  	}
+  	@media (width <= 700px) {
+    	main {
+      	padding: 2rem;
+    	}
+  	}
+  	@media print {
+  		main {
+  			max-width: 100%;
+   		box-shadow: 0 0 1rem transparent;
+  		}
+  	}
+</style>

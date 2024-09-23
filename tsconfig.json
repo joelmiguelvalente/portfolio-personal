@@ -1,0 +1,23 @@
+{
+	"extends": "astro/tsconfigs/strict",
+	"compilerOptions": {
+		"baseUrl": ".",
+		"paths": {
+      	"@cv": [
+        		"./cv.json"
+      	],
+			"@/*": [
+				"src/*"
+			],
+			"@components/*": [
+				"src/components/*.astro"
+			],
+			"@icons/*": [
+				"src/icons/*.astro"
+			],
+			"@sections/*": [
+				"src/components/sections/*.astro"
+			],
+		}
+	}
+}

@@ -1,0 +1,82 @@
+---
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="description" content="Astro description" />
+<meta name="viewport" content="width=device-width" />
+<link rel="icon" type="image/svg+xml" href="/me.webp" />
+<meta name="generator" content={Astro.generator} />
+<title>{title}</title>
+</head>
+<body>
+	<slot />
+</body>
+</html>
+<style is:global>
+	*, *::before, *::after {
+    	box-sizing: border-box;
+    	margin: 0;
+    	padding: 0;
+  	}
+  	html {
+   	font: normal normal 400 1rem/1.5rem Roboto, sans-serif;
+   	background: #EEE;
+   	padding: 2rem 0;
+  	}
+  	a {
+    	text-decoration: none;
+  	}
+  	ul {
+    	list-style: none;
+  	}
+  	:where(h1, h2, h3, h4, p) {
+    	margin: 0;
+    	padding: 0;
+  	}
+	p {
+		color: #666;
+		text-wrap: pretty;
+	}
+	.badge {
+		display: inline-block;
+		border-radius: 4px;
+		color: #222;
+		background: #F4F4F4;
+		font-weight: 600;
+		height: 1.325rem;
+		line-height: 1.325rem;
+		font-size: 0.75rem;
+		padding: 0 .6rem;
+		font-style: italic;
+	}
+  	.print {
+   	display: none !important;
+  	}
+  	@media print {
+    	.no-print {
+      	display: none !important;
+    	}
+    	.print {
+      	display: block !important;
+    	}
+    	html {
+    		padding: 0;
+    		background: #FFF;
+    	}
+
+   	astro-dev-toolbar {
+      	display: none !important;
+    	}
+    	article {
+      	break-inside: avoid;
+    	}
+  	}
+</style>
