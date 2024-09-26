@@ -2,24 +2,15 @@
 import Layout from '@/layouts/Layout.astro';
 
 // Configurado en tsconfig.json => "src/components/sections/*.astro"
-import Hero from '@sections/Hero';
-import About from '@sections/About';
-import Skills from '@sections/Skills';
-import Experience from '@sections/Experience';
-import Education from '@sections/Education';
-import Projects from '@sections/Projects';
+import Hero from '@/components/sections/Hero.astro';
+import About from '@/components/sections/About.astro';
+import Skills from '@/components/sections/Skills.astro';
+import Experience from '@/components/sections/Experience.astro';
+import Education from '@/components/sections/Education.astro';
+import Projects from '@/components/sections/Projects.astro';
 
 // Configurado en tsconfig.json => "src/components/*.astro"
-import KeyboardManager from '@components/KeyboardManager';
-
-const sections = {
-	Hero,
-	About,
-	Skills,
-	Experience,
-	Education,
-	Projects
-};
+import KeyboardManager from '@/components/KeyboardManager.astro';
 
 import { basics } from "@cv"
 const { name, label } = basics
@@ -27,10 +18,12 @@ const { name, label } = basics
 
 <Layout title={`Portafolio de ${name} - ${label}`}>
 	<main>
-   	{Object.keys(sections).map(section => {
-    		const SectionComponent = sections[section];
-    		return <SectionComponent />;
-  		})}
+   	<Hero />
+   	<Skills />
+   	<About />
+   	<Experience />
+   	<Education />
+   	<Projects />
 	</main>
 	<KeyboardManager />
 </Layout>

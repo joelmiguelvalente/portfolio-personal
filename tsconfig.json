@@ -8,16 +8,7 @@
       	],
 			"@/*": [
 				"src/*"
-			],
-			"@components/*": [
-				"src/components/*.astro"
-			],
-			"@icons/*": [
-				"src/icons/*.astro"
-			],
-			"@sections/*": [
-				"src/components/sections/*.astro"
-			],
+			]
 		}
 	}
 }
