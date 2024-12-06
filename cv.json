@@ -6,7 +6,7 @@
 		"email": "joelmiguelvalente@gmail.com",
 		"phone": "+54 9 1153891106",
 		"url": "https://github.com/joelmiguelvalente",
-		"summary": "+10 años como Desarrollador Web Fullstack en proyectos complejos. Comencé en el mundo de PHP en 2011, investigando y aprendiendo de manera autodidacta. He desarrollado, no completamente, pero sí modificando varios sitios web. Además, he diseñado páginas desde cero utilizando HTML, CSS y JavaScript.",
+		"summary": "Cuento con más de 10 años de experiencia como Desarrollador Web Fullstack, trabajando en proyectos desafiantes y complejos. Inicié mi trayectoria en 2011 con PHP, desarrollando mis habilidades de manera autodidacta. A lo largo de mi carrera, he contribuido en la creación y personalización de diversos sitios web, así como en el desarrollo de páginas desde cero, utilizando HTML, CSS y JavaScript. Mi enfoque combina técnica y creatividad para ofrecer soluciones funcionales y atractivas.",
 		"location": {
 			"address": "",
 			"postalCode": "1615",
@@ -32,9 +32,9 @@
 			"name": "Desarrollador Freelance",
 			"position": "Fullstack",
 			"url": "https://zcodev.alwaysdata.net",
-			"startDate": "2024-07-12",
+			"startDate": null,
 			"endDate": null,
-			"summary": "Trabajo de forma independiente en proyectos de desarrollo web a medida. Uso tecnologías como PHP con Smarty, JavaScript, NodeJS y bases de datos MySQL.",
+			"summary": "Trabajo de forma independiente en proyectos de desarrollo web a medida. Uso tecnologías como PHP con Smarty, JavaScript y bases de datos MySQL.",
 			"highlights": [
 		 		"Desarrollo de sistemas backend escalables y eficientes."
 			]
@@ -112,15 +112,38 @@
 	],
 	"projects": [
 		{
-			"name": "PHPost '23",
-			"isActive": false,
-			"description": "PHPost estaba siendo realizado con PHP y Smarty (lo pase a ZCode)",
+			"name": "Crapeando",
+			"isActive": true,
+			"description": "Renovación del diseño para que sea más adaptable a dispositivos móviles y nuevas funcionalidaes",
+			"highlights": [
+				"PHP",
+				"Smarty",
+				"Html", "CSS", "jQuery"
+			],
+			"url": "https://crapeando.net"
+		},
+		{
+			"name": "Fiesta Dulce",
+			"isActive": true,
+			"description": "Página con el funcionamiento necesario ya que solo brinda información como si fuese un catágolo y esta funcionando en vercel",
+			"highlights": [
+				"Astro",
+				"Cloudinary",
+				"Vercel"
+			],
+			"url": "https://fiestadulce.vercel.app"
+		},
+		{
+			"name": "ZCode 2.0.6",
+			"isActive": true,
+			"description": "ZCode 2.0.6 esta realizado con PHP y Smarty, usa como base el clon de PHPost",
 			"highlights": [
 				"Instalable",
+				"Optimización",
 				"Configurable",
-				"Abandonada"
+				"En desarrollo"
 			],
-			"url": "https://github.com/ScriptParaPHPost/PHPost"
+			"url": "https://zcodev.alwaysdata.net"
 		},
 		{
 			"name": "ZCode 1.10.15",
@@ -135,39 +158,15 @@
 			"url": "https://github.com/ScriptParaPHPost/ZCode"
 		},
 		{
-			"name": "ZCode 2.0.4",
-			"isActive": true,
-			"description": "ZCode 2.0.4 esta realizado con PHP y Smarty, usa como base el clon de PHPost",
+			"name": "PHPost '23",
+			"isActive": false,
+			"description": "PHPost estaba siendo realizado con PHP y Smarty (lo pase a ZCode)",
 			"highlights": [
 				"Instalable",
-				"Optimización",
 				"Configurable",
-				"En desarrollo"
+				"Abandonada"
 			],
-			"url": "https://zcodev.alwaysdata.net"
-		},
-		{
-			"name": "ZCode Feed",
-			"isActive": true,
-			"description": "Solo es un pequeño sistema hecho con php para mostrar información a los sitios instalados sobre nuevas actualizaciones y visitarlo de forma visual",
-			"highlights": [
-				"Descargas",
-				"Información",
-				"Peticiones",
-				"Versiones"
-			],
-			"url": "https://zcodev.alwaysdata.net/feed"
-		},
-		{
-			"name": "Fiesta Dulce",
-			"isActive": true,
-			"description": "Página con el funcionamiento necesario ya que solo brinda información como si fuese un catágolo y esta funcionando en vercel",
-			"highlights": [
-				"Astro",
-				"Cloudinary",
-				"Vercel"
-			],
-			"url": "https://fiestadulce.vercel.app"
+			"url": "https://github.com/ScriptParaPHPost/PHPost"
 		}
   ]
 }

@@ -39,25 +39,25 @@ const { image, summary, url } = basics
 </html>
 <style is:global>
 	*, *::before, *::after {
-    	box-sizing: border-box;
-    	margin: 0;
-    	padding: 0;
-  	}
-  	html {
-   	font: normal normal 400 1rem/1.5rem Roboto, sans-serif;
-   	background: #EEE;
-   	padding: 2rem 0;
-  	}
-  	a {
-    	text-decoration: none;
-  	}
-  	ul {
-    	list-style: none;
-  	}
-  	:where(h1, h2, h3, h4, p) {
-    	margin: 0;
-    	padding: 0;
-  	}
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+	}
+	html {
+		font: normal normal 400 1rem/1.5rem Roboto, sans-serif;
+		background: #EEE;
+		padding: 2rem 0;
+	}
+	a {
+		text-decoration: none;
+	}
+	ul {
+		list-style: none;
+	}
+	:where(h1, h2, h3, h4, p) {
+		margin: 0;
+		padding: 0;
+	}
 	p {
 		color: #666;
 		text-wrap: pretty;
@@ -77,26 +77,31 @@ const { image, summary, url } = basics
 		padding: 0 .6rem;
 		font-style: italic;
 	}
-  	.print {
-   	display: none !important;
-  	}
-  	@media print {
-    	.no-print {
-      	display: none !important;
-    	}
-    	.print {
-      	display: block !important;
-    	}
-    	html {
-    		padding: 0;
-    		background: #FFF;
-    	}
+	.print {
+		display: none !important;
+	}
+	@media print {
+		.no-print {
+			display: none !important;
+		}
+		.print {
+			display: block !important;
+		}
+		html {
+			padding: 0;
+			background: #FFF;
+		}
 
-   	astro-dev-toolbar {
-      	display: none !important;
-    	}
-    	article {
-      	break-inside: avoid;
-    	}
-  	}
+		astro-dev-toolbar {
+			display: none !important;
+		}
+		article {
+			break-inside: avoid;
+		}
+	}
+	@media (width <= 620px) {
+		html {
+			padding: 0;
+		}
+	}
 </style>

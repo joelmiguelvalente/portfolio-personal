@@ -2,7 +2,7 @@
 import Section from "../Section.astro"
 import { projects } from "@cv"
 ---
-<Section title="Projectos">
+<Section title="Proyectos">
 
 	<ul>
 		{
@@ -12,7 +12,7 @@ import { projects } from "@cv"
 						<article>
 							<header>
 								<h3>
-									<a href={url} title={`Ver proyecto ${name}`} target="_blank" rel="">{name}</a>
+									<a href={url} title={`Ver proyecto ${name}`} target="_blank" rel="external">{name}</a>
 									{isActive && <span>&bull;</span>}
 								</h3>
 								<p>{description}</p>
@@ -37,8 +37,14 @@ import { projects } from "@cv"
 
 <style>
 	ul {
-		display: block;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
 		gap: 1rem;
+	}
+	@media (width <= 768px) {
+		ul {
+			display: block;
+		}
 	}
 	article {
 		border-radius: 6px;

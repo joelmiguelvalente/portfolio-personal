@@ -34,12 +34,21 @@ const { name, label } = basics
    	padding: 2rem;
    	margin: auto;
    	border-radius: .5rem;
-   	box-shadow: 0 0 1rem #0004;
-		max-width: 60%;
+		max-width: 70%;
   	}
-  	@media (width <= 700px) {
+  	@media (width <= 992px) {
+    	main {
+			max-width: 90%;
+    	}
+  	}
+  	@media (width <= 768px) {
     	main {
       	padding: 2rem;
+    	}
+  	}
+  	@media (width <= 620px) {
+    	main {
+			max-width: 100%;
     	}
   	}
   	@media print {

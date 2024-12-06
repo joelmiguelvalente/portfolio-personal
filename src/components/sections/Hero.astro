@@ -32,25 +32,25 @@ const print = [email, phone, linkedUrl].filter(Boolean).join(" • ")
 			</footer>
 			<footer class="no-print">
 				{email && (
-						<a href={`mailto:${email}`} title={`Enviar un correo a ${name} al correo ${email}`} target="_blank" rel="noopener noreferrer"><Mail /></a>
+						<a href={`mailto:${email}`} title={`Enviar un correo a ${name} al correo ${email}`} aria-label={`Enviar un correo a ${name} al correo ${email}`} target="_blank" rel="noopener noreferrer"><Mail /></a>
 					)
 				}
 				{phone && (
-						<a href={`tel:${phone}`} title={`Llamar por teléfono a ${name}`} target="_blank" rel="noopener noreferrer"><PhoneCall /></a>
+						<a href={`tel:${phone}`} title={`Llamar por teléfono a ${name}`} aria-label={`Llamar por teléfono a ${name}`} target="_blank" rel="noopener noreferrer"><PhoneCall /></a>
 					)
 				}
 				{
 					profiles.map(({ network, url, username }) => {
 						const Icon = SOCIAL_ICONS[network]
 						return (
-							<a href={url} title={`Perfil en ${network}`} target="_blank" rel="noopener noreferrer"><Icon /></a>
+							<a href={url} title={`Perfil en ${network}`} aria-label={`Perfil en ${network}`} target="_blank" rel="noopener noreferrer"><Icon /></a>
 						)
 					})
 				}
 			</footer>
 		</div>
 		<figure>
-			<img src={image} alt={name} />
+			<img src={image} alt={name} width="128" height="128" />
 		</figure>
 	</div>
 </Section>
@@ -88,7 +88,6 @@ const print = [email, phone, linkedUrl].filter(Boolean).join(" • ")
 		aspect-ratio: 1 / 1;
 		object-fit: cover;
 		border-radius: 1rem;
-		width: 8rem;
 	}
 	span {
 		color: #666;
@@ -118,5 +117,16 @@ const print = [email, phone, linkedUrl].filter(Boolean).join(" • ")
 	}
 	footer a:hover {
 		background: #eee;
+	}
+	@media (width <= 620px) {
+		.container {
+			flex-direction: column-reverse;
+		}
+		.info {
+			padding-right: 0;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+		}
 	}
 </style>

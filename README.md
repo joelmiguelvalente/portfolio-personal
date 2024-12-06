@@ -6,6 +6,7 @@
 - [Ninja Keys](https://github.com/ssleptsov/ninja-keys) - Menu desplegable con atajos de teclado hecho en puro Javascript.
 
 ## 🔑 Licencia
-[MIT](https://github.com/midudev/minimalist-portfolio-json/blob/main/LICENSE.txt) - Creado por [midudev](https://midu.dev/).
+- [MIT](https://github.com/midudev/minimalist-portfolio-json/blob/main/LICENSE.txt) - Creado por [midudev](https://midu.dev/).
+- Modificado por [Miguel92](https://github.com/joelmiguelvalente).
 
 > Basado en el diseño de [Bartosz Jarocki](https://github.com/BartoszJarocki/cv)
