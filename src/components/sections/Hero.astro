@@ -32,11 +32,11 @@ const print = [email, phone, linkedUrl].filter(Boolean).join(" • ")
 			</footer>
 			<footer class="no-print">
 				{email && (
-						<a href={`mailto:${email}`} title={`Enviar un correo a ${name} al correo ${email}`} aria-label={`Enviar un correo a ${name} al correo ${email}`} target="_blank" rel="noopener noreferrer"><Mail /></a>
+					<a href={`mailto:${email}`} title={`Enviar un correo a ${name} al correo ${email}`} aria-label={`Enviar un correo a ${name} al correo ${email}`} target="_blank" rel="noopener noreferrer"><Mail /></a>
 					)
 				}
 				{phone && (
-						<a href={`tel:${phone}`} title={`Llamar por teléfono a ${name}`} aria-label={`Llamar por teléfono a ${name}`} target="_blank" rel="noopener noreferrer"><PhoneCall /></a>
+					<a href={`tel:${phone}`} title={`Llamar por teléfono a ${name}`} aria-label={`Llamar por teléfono a ${name}`} target="_blank" rel="noopener noreferrer"><PhoneCall /></a>
 					)
 				}
 				{
@@ -50,7 +50,7 @@ const print = [email, phone, linkedUrl].filter(Boolean).join(" • ")
 			</footer>
 		</div>
 		<figure>
-			<img src={image} alt={name} width="128" height="128" />
+			<img src={image} alt={name} width="128" height="128" loading="eage" inferSize />
 		</figure>
 	</div>
 </Section>
