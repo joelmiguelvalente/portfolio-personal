@@ -105,7 +105,33 @@
 		}
 	],
 	"projects": [
-		{
+	  	{
+			"url": "https://proyectos-random-x.github.io/OnePageCV/",
+			"isActive": true,
+			"name": "Portfolio Configurable v1.0.3",
+			"description": "Un portfolio personal minimalista y profesional que funciona como CV online de una sola página. Creado con tecnologías web fundamentales: HTML, CSS y JavaScript vanilla.",
+			"highlights": [
+				"Configurable",
+				"Diseño responsivo y ligero"
+			]
+		},	{
+			"url": "https://portfoliov2-navy.vercel.app/",
+			"isActive": true,
+			"name": "Portfolio v2",
+			"description": "Esta es la versión 2 del portfolio construido solo con HTML5, CSS3 y JAVASCRIPT, este cuenta con algunas secciones aunque no le he agregado la sección de servicios.",
+			"highlights": [
+				"Optimización de imágenes",
+				"Diseño responsivo y ligero"
+			]
+		}, {
+			"url": "https://discord-message-omega.vercel.app/",
+			"isActive": true,
+			"name": "Discord Message 1.0.0",
+			"description": "Enviar solo mensajes personalizados a discord y también se puede incluir archivos como imagenes o rar, zip..",
+			"highlights": [
+				"Diseño ligero"
+			]
+		}, {
 			"name": "Fiesta Dulce",
 			"isActive": true,
 			"description": "Página con el funcionamiento necesario ya que solo brinda información como si fuese un catágolo y esta funcionando en vercel",
@@ -115,8 +141,7 @@
 				"Vercel"
 			],
 			"url": "https://fiestadulce.vercel.app"
-		},
-		{
+		}, {
 			"name": "ZCode 2.1.15",
 			"isActive": true,
 			"description": "ZCode 2.1.15 esta realizado con PHP y Smarty, usa como base el clon de PHPost",
@@ -127,8 +152,7 @@
 				"Estable"
 			],
 			"url": "https://github.com/ScriptParaPHPost/ZCode"
-		},
-		{
+		}, {
 			"name": "PHPost '23",
 			"isActive": false,
 			"description": "PHPost estaba siendo realizado con PHP y Smarty (lo pase a ZCode)",
